@@ -1,0 +1,315 @@
+/*colores
+background: #E2C4A5;
+Rojo: #DC605C;
+cremita: #FBEEDD;
+blanco: #fff;
+*/
+
+
+:root {
+	font-size: 16px;
+}
+
+*{
+	box-sizing: border-box;
+}
+/*tipografía*/
+body{
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.3;
+	background-color: #ff782b;
+	background-image: url(../images/section-background.jpg);
+}
+
+}
+
+h1, h2, h3, p{
+	margin-top: 0px;
+}
+h1, h2, h3{
+	color: #fff;
+	font-family: 'Noto Serif SC', serif;
+	font-size: 2rem;
+}
+h1{
+	font-size: 3rem;
+
+}
+ 
+ }
+p, table{
+	color: #ff782b;
+	font-size: 1rem;
+}
+
+/*enlaces*/
+a{
+	color: #ff782b;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: all 300ms ease;	
+}
+
+a:hover{
+	color: #db550b;
+}
+
+/*header*/
+header{
+	background-color: #fff1e9;
+	position: sticky;
+	top: 0px;
+	width: 100%;
+	z-index: 1000;
+}
+.wrapper-header{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+nav{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+nav a{
+	color:#ff782b;
+	padding: 15px 60px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(../images/menu-hamburguesa.svg);
+}
+
+
+.navbar-dark .navbar-nav .nav-link{
+	color: #ff782b;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #db550b;
+}
+
+
+.logo{
+	display: grid;
+	place-items: center;	
+}
+/*.container {
+	display: block;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+}*/
+
+/*cuerpo de la web*/
+
+.principal{ 
+	background-color: #ff782b; 
+	padding: 50px;
+	text-align: left;
+	height: 500px;
+	color: #fff;
+
+} 
+
+.principal h1{
+	font-size: 4rem;
+	margin-bottom: 10px;
+}
+
+.principal p{
+	margin-bottom: 40px;
+}
+
+.background-image{
+	background-image: url(../images/fondo1.jpg);
+	background-position: 70% 30%;
+	background-attachment: fixed;
+
+}
+.wrapper-main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+section > * + *{
+	padding-top: .5rem;
+}
+
+/*grilla*/
+
+.grilla-partes-de-clase{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 300px;
+	grid-auto-rows: 1fr;
+	gap: 1rem;
+	row-gap: 1.6rem;
+}
+ @media (max-width: 769px){
+ .grilla-partes-de-clase{
+ 	display: block;
+ }
+ .grilla-partes-de-clase> *{
+ 	height: 300px;
+ 	margin: 2rem;
+	display: grid;
+	place-items: center;
+	padding: 2rem;
+}
+
+
+.grilla-partes-de-clase h3{
+	text-shadow: 0px 1px 10px rgba(0,0,0,0.55);
+}
+
+
+.frase{ 
+grid-column: span 3;
+background-color: #ff782b; 
+position: relative;
+border-radius: 3px;
+}
+
+
+.frase p{ 
+font-size: 1.5rem;
+color: #fff1e9;
+}
+
+.frase img{
+	border-radius: 3px;
+}
+
+
+.image{
+	grid-column: span 2;
+	position: relative;
+}
+
+.image img{
+position:absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+border-radius: 3px;
+transition: .3s ease-in-out;
+}
+
+.image:hover img{
+	max-height: 100%;
+	max-width: 100%;
+	background-color: #ff782b;
+	transform: translate(0px, -5px);
+}
+
+.frase.frase-imagen{
+	padding: 0;
+}
+.frase.frase-imagen img{
+	width: 100%;
+}
+.image h3{
+	position: relative;
+	z-index: 2;
+}
+
+footer{
+	background-color: #fff1e9;
+
+}
+
+.boton-empecemos{
+	color: #fff1e9;
+	font-weight: 600;
+	background-color: #ff782b;
+  	padding: 8px 20px;
+  	border-radius: 5px;
+  	width: 150px;
+  	transition: .3s ease-in-out;
+
+}
+
+.boton-empecemos:hover{
+	background-color: #fff1e9;
+	color: #ff782b;
+}
+
+
+.boton-mas-info{
+	color: #ff782b;
+	font-weight: 600;
+	background-color: #fff1e9;
+  	padding: 8px 20px;
+  	border-radius: 5px;
+  	width: 150px;
+  	transition: .3s ease-in-out;
+}
+
+.mas-info{
+	padding: 8% 0;
+	text-align: center;
+}
+
+.mas-info p{
+	margin-bottom: 50px;
+}
+
+.mas-info h2{
+	color: #ff782b;
+	margin-bottom: 30px;
+	font-size: 3rem;
+}
+
+
+ /*tabla*/
+table.table{
+	background-color: #ff782b; 
+	color: #fff;
+
+}
+
+
+/*Animaciones*/
+.fade-in {
+animation: fadeIn ease 1.5s;
+-webkit-animation: fadeIn ease 1.5s;
+-moz-animation: fadeIn ease 1.5s;
+-o-animation: fadeIn ease 1.5s;
+-ms-animation: fadeIn ease 1.5s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
