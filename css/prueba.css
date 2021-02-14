@@ -7194,7 +7194,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  line-height: 1.3;
+  line-height: 1.7;
   background-color: #ff782b;
   background-image: url(../images/section-background.jpg); }
 
@@ -7368,14 +7368,10 @@ header {
 section h2 {
   color: #ff782b; }
 
-section > * + * {
-  padding-top: .5rem; }
-
 /*grilla index*/
 .grilla-partes-de-clase {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 300px;
   grid-auto-rows: 1fr;
   gap: .5rem;
   row-gap: 1.6rem; }
@@ -7473,8 +7469,7 @@ table.table {
 footer {
   background-color: #fff1e9;
   display: block;
-  padding-top: 30px;
-  margin-top: 80px; }
+  padding-top: 30px; }
 
 .footer-wrapper > * {
   display: flex;
@@ -7497,8 +7492,10 @@ footer {
 
 .icon-social {
   width: 20px;
-  opacity: 50%;
   margin: 5px; }
+  .icon-social:hover {
+    opacity: 50%;
+    transition: .3s ease-in-out; }
 
 /*Animaciones*/
 .fade-in {
@@ -7539,9 +7536,23 @@ footer {
     opacity: 1; } }
 
 .grilla-quienes-somos {
-  padding: 5rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto; }
-  .grilla-quienes-somos article {
-    border: 2px solid black; }
+  grid-template-columns: repeat(2, 50%); }
+  @media (max-width: 769px) {
+    .grilla-quienes-somos {
+      display: block; } }
+
+article {
+  border: none; }
+  article img {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  article.article-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    text-align: justify; }
