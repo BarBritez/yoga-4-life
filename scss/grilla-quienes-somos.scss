@@ -2,7 +2,13 @@
     display: grid;
     grid-template-columns: repeat(2, 50%);
     @media (max-width: 769px){
-        display: block;
+        grid-template-columns:100%;
+        .grilla3{
+            order: 4;
+        }
+        .grilla4{
+            order:3;
+        }
     }   
 }   
    
