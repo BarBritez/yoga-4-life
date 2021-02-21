@@ -9,6 +9,7 @@
 
 $primary:#ff782b;
 $secondary: #fff1e9;
+$navbar-light-color: $primary;
 
 
 @import "bootstrap-css/bootstrap.scss";
@@ -55,50 +56,50 @@ a{
 }
 
 /*header*/
-header{
-	background-color: $secondary;
-	position: sticky;
-	top: 0px;
-	width: 100%;
-	z-index: 1000;
-	-webkit-box-shadow: 0px 2px 34px 0px rgba(173,73,22,0.27);
--moz-box-shadow: 0px 2px 34px 0px rgba(173,73,22,0.27);
-box-shadow: 0px 2px 34px 0px rgba(173,73,22,0.27);
-	.wrapper-header{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		padding: 1rem;
-	}
-	nav{
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+// header{
+// 	background-color: $secondary;
+// 	position: sticky;
+// 	top: 0px;
+// 	width: 100%;
+// 	z-index: 1000;
+// 	-webkit-box-shadow: 0px 2px 34px 0px rgba(173,73,22,0.27);
+// -moz-box-shadow: 0px 2px 34px 0px rgba(173,73,22,0.27);
+// box-shadow: 0px 2px 34px 0px rgba(173,73,22,0.27);
+// 	.wrapper-header{
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		justify-content: space-between;
+// 		padding: 1rem;
+// 	}
+// 	nav{
+// 	display:flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	flex-wrap: wrap;
 		
-		.navbar-dark .navbar-toggler-icon {
-		    background-image: url(../images/menu-hamburguesa.svg);
-		}
+// 	.navbar-dark .navbar-toggler-icon {
+// 	background-image: url(../images/menu-hamburguesa.svg);
+// 	}
 
 
-		.navbar-dark .navbar-nav .nav-link{
-			color: #ff782b;
-		}
+// 		.navbar-dark .navbar-nav .nav-link{
+// 			color: #ff782b;
+// 		}
 
-		.navbar-dark .navbar-nav .nav-link:hover{
-			color: #db550b;
-		}
-		a{
-		color: $primary;
-		padding: 15px 20px;
-		}
+// 		.navbar-dark .navbar-nav .nav-link:hover{
+// 			color: #db550b;
+// 		}
+// 		a{
+// 		color: $primary;
+// 		padding: 15px 20px;
+// 		}
 
-	}
-	.logo{
-	display: grid;
-	place-items: center;	
-	}
-}
+// 	}
+// 	.logo{
+// 	display: grid;
+// 	place-items: center;	
+// 	}
+// }
 
 
 
@@ -158,6 +159,9 @@ section{
 	display: grid;
 	place-items: center;
 	padding: 2rem;
+	}
+	a{
+		text-decoration: none;
 	}
 	h3{
 	text-shadow: 0px 1px 10px rgba(0,0,0,0.55);
@@ -268,14 +272,44 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 }
 
 
-
+// secciones qué es yoga
+.columnas-que-es{
+	display: flex;
+	& > *{
+		padding: 2rem;
+	}
+	@media (max-width: 992px){
+		flex-wrap: wrap;
+	}
+}
+.pilares-yoga{
+	margin-top: 4rem;
+	padding: 2rem;
+	h2{
+		
+		padding-bottom: 2rem;
+	}
+	h3{
+		color: $primary;
+		font-size: 1.3rem;
+	}
+	img{
+		border-radius: 5px;
+	}
+	article{
+		margin-bottom: 3rem;
+	}
+}
 
  /*tabla*/
-table.table{
-	background-color: #ff782b; 
-	color: #fff;
+ table{
+	margin: 2rem;
+	
+	thead{
+		color: #fff;
+	}
+ }
 
-}
 
 // footer
 footer{
@@ -311,14 +345,125 @@ footer{
 }
 
 .icon-social{
-width: 20px;
-margin: 5px;
-&:hover{
-	opacity: 50%;
-	transition: .3s ease-in-out;
+	width: 20px;
+	margin: 5px;
+	&:hover{
+		opacity: 50%;
+		transition: .3s ease-in-out;
+	}		
 }
-			
-}
+
+// Contacto
+// .group 			  { 
+// 	position:relative; 
+// 	margin-bottom:45px; 
+//   }
+//   input 				{
+// 	font-size:18px;
+// 	padding:10px 10px 10px 5px;
+// 	display:block;
+// 	width:300px;
+// 	border:none;
+// 	border-bottom:1px solid #757575;
+// 	color: $primary;
+//   }
+//   input:focus 		{ outline:none; }
+  
+//   /* LABEL ======================================= */
+//   label 				 {
+// 	color:#999; 
+// 	font-size:18px;
+// 	font-weight:normal;
+// 	position:absolute;
+// 	pointer-events:none;
+// 	left:5px;
+// 	top:10px;
+// 	transition:0.2s ease all; 
+// 	-moz-transition:0.2s ease all; 
+// 	-webkit-transition:0.2s ease all;
+//   }
+  
+//   /* ESTADO ACTIVO */
+//   input:focus ~ label, input:valid ~ label 		{
+// 	top:-20px;
+// 	font-size:14px;
+// 	color:#ff782b
+//   }
+  
+//   /* BARRAS DE ABAJO ================================= */
+//   .bar 	{ position:relative; display:block; width:300px; }
+//   .bar:before, .bar:after 	{
+// 	content:'';
+// 	height:2px; 
+// 	width:0;
+// 	bottom:1px; 
+// 	position:absolute;
+// 	background:#ff782b; 
+// 	transition:0.2s ease all; 
+// 	-moz-transition:0.2s ease all; 
+// 	-webkit-transition:0.2s ease all;
+//   }
+//   .bar:before {
+// 	left:50%;
+//   }
+//   .bar:after {
+// 	right:50%; 
+//   }
+  
+//   /* active state */
+//   input:focus ~ .bar:before, input:focus ~ .bar:after {
+// 	width:50%;
+//   }
+  
+//   /* HIGHLIGHTER ================================== */
+//   .highlight {
+// 	position:absolute;
+// 	height:60%; 
+// 	width:100px; 
+// 	top:25%; 
+// 	left:0;
+// 	pointer-events:none;
+// 	opacity:0.5;
+//   }
+  
+//   /* ESTADO ACTIVO */
+//   input:focus ~ .highlight {
+// 	-webkit-animation:inputHighlighter 0.3s ease;
+// 	-moz-animation:inputHighlighter 0.3s ease;
+// 	animation:inputHighlighter 0.3s ease;
+//   }
+  
+//   .send{
+// 	background: #ff782b;
+// 	color: #fff;
+// 	border: 0;
+// 	border-radius: 5px;
+//   }
+  
+//   .seleccion{
+// 	margin-bottom: 20px;
+//   }
+  
+//   .custom-select select {
+// 	padding: 15px 20px;
+// 	border: 0;
+// 	border-bottom: 1px solid #000;
+//   }
+  
+  
+  /* ANIMACIONES ================ */
+  @-webkit-keyframes inputHighlighter {
+	  from { background:#5264AE; }
+	to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+	  from { background:#5264AE; }
+	to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+	  from { background:#5264AE; }
+	to 	{ width:0; background:transparent; }
+  }
 
 /*Animaciones*/
 .fade-in {
