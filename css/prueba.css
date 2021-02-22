@@ -7200,11 +7200,10 @@ body {
 
 h1, h2, h3 {
   color: #fff;
-  font-family: 'Noto Serif SC', serif;
-  font-size: 2rem; }
+  font-family: 'Noto Serif SC', serif; }
 
 h1 {
-  font-size: 3rem; }
+  font-size: 3.5rem; }
 
 p {
   font-size: 1rem; }
@@ -7235,7 +7234,6 @@ a {
   display: flex;
   align-items: center; }
   .background-clases h1 {
-    font-size: 4rem;
     margin-bottom: 10px; }
   .background-clases p {
     margin-bottom: 40px;
@@ -7255,7 +7253,6 @@ a {
   display: flex;
   align-items: center; }
   .background-contacto h1 {
-    font-size: 4rem;
     margin-bottom: 10px; }
   .background-contacto p {
     margin-bottom: 40px;
@@ -7275,7 +7272,6 @@ a {
   display: flex;
   align-items: center; }
   .background-inicio h1 {
-    font-size: 4rem;
     margin-bottom: 10px; }
   .background-inicio p {
     margin-bottom: 40px;
@@ -7295,7 +7291,6 @@ a {
   display: flex;
   align-items: center; }
   .background-quienes-somos h1 {
-    font-size: 4rem;
     margin-bottom: 10px; }
   .background-quienes-somos p {
     margin-bottom: 40px;
@@ -7315,7 +7310,6 @@ a {
   display: flex;
   align-items: center; }
   .background-que-es-yoga h1 {
-    font-size: 4rem;
     margin-bottom: 10px; }
   .background-que-es-yoga p {
     margin-bottom: 40px;
@@ -7419,14 +7413,14 @@ section h2 {
   transition: .3s ease-in-out; }
 
 .mas-info {
-  padding: 6rem 3rem 4rem 3rem;
+  padding: 3rem;
   text-align: center; }
   .mas-info p {
     margin-bottom: 50px; }
   .mas-info h2 {
     color: #ff782b;
     margin-bottom: 30px;
-    font-size: 3rem; }
+    font-size: 2.5rem; }
 
 .columnas-que-es {
   display: flex; }
@@ -7453,7 +7447,10 @@ section h2 {
 table {
   border-radius: 5px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  -webkit-box-shadow: 0px 10px 21px 1px rgba(255, 120, 43, 0.13);
+  -moz-box-shadow: 0px 10px 21px 1px rgba(255, 120, 43, 0.13);
+  box-shadow: 0px 10px 21px 1px rgba(255, 120, 43, 0.13); }
   table thead {
     color: #fff;
     background-color: #ff782b; }
@@ -7467,14 +7464,12 @@ table {
   .elementos-clases ul li {
     list-style: none; }
 
-.formulario {
-  margin: 3rem 0; }
-
 .donde-estamos {
-  display: flex;
-  justify-items: space-between; }
+  display: flex; }
   .donde-estamos div {
-    flex-basis: 50%; }
+    flex-basis: 50%;
+    display: grid;
+    place-items: center; }
 
 footer {
   background-color: #fff1e9;

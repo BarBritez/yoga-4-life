@@ -25,14 +25,10 @@ body {
 h1, h2, h3{
 	color: #fff;
 	font-family: 'Noto Serif SC', serif;
-	font-size: 2rem;
 }
 h1{
-	font-size: 3rem;
-
+	font-size: 3.5rem;
 }
- 
- 
 p{
 	font-size: 1rem;
 }
@@ -66,7 +62,6 @@ $backgrounds: clases, contacto, inicio, quienes-somos, que-es-yoga;
 		height: 500px;
 		color: #fff;
 		h1{
-		font-size: 4rem;
 		margin-bottom: 10px;
 		}
 		p{
@@ -207,7 +202,7 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 }
 
 .mas-info{
-	padding: 6rem 3rem 4rem 3rem;
+	padding: 3rem;
 	text-align: center;
 	p{
 		margin-bottom: 50px;
@@ -215,7 +210,7 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 	h2{
 	color: $primary;
 	margin-bottom: 30px;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	}
 }
 
@@ -258,6 +253,9 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 	border-radius: 5px;
 	margin-left: auto;
 	margin-right:auto;
+	-webkit-box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
+-moz-box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
+box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
  }
 
 // clases
@@ -274,18 +272,14 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 	 }
  }
 //  contacto
-.formulario{
-	margin: 3rem 0;
-}
 .donde-estamos{
 	display: flex;
-	justify-items: space-between;
 	div{
 		flex-basis: 50%;
+		display: grid;
+		place-items: center;
 	}		
 }
-
-
 // footer
 footer{
 	background-color: $secondary;
