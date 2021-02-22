@@ -28,6 +28,11 @@ h1, h2, h3{
 }
 h1{
 	font-size: 3.5rem;
+	@media(max-width: 500px){
+		&{
+			font-size:2.5rem;
+		}
+	}
 }
 p{
 	font-size: 1rem;
@@ -35,6 +40,19 @@ p{
 
 .container{
 	max-width: 1440px;
+}
+// header
+nav{
+	a{
+		img{
+			@media (max-width: 500px) {
+			&{
+			width: 140px;
+			height:50px;
+			}	
+			}	
+		}
+	}
 }
 
 /*enlaces*/
@@ -79,6 +97,7 @@ $backgrounds: clases, contacto, inicio, quienes-somos, que-es-yoga;
 	flex-direction: column;
 	justify-content: center;
 }
+
 
 .texto-alineado{
 	text-align: center;
@@ -211,6 +230,11 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 	color: $primary;
 	margin-bottom: 30px;
 	font-size: 2.5rem;
+	@media(max-width: 500px){
+		&{
+			font-size:2rem;
+		}
+	}
 	}
 }
 

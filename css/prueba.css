@@ -7204,12 +7204,20 @@ h1, h2, h3 {
 
 h1 {
   font-size: 3.5rem; }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 2.5rem; } }
 
 p {
   font-size: 1rem; }
 
 .container {
   max-width: 1440px; }
+
+@media (max-width: 500px) {
+  nav a img {
+    width: 140px;
+    height: 50px; } }
 
 /*enlaces*/
 a {
@@ -7421,6 +7429,9 @@ section h2 {
     color: #ff782b;
     margin-bottom: 30px;
     font-size: 2.5rem; }
+    @media (max-width: 500px) {
+      .mas-info h2 {
+        font-size: 2rem; } }
 
 .columnas-que-es {
   display: flex; }
