@@ -7433,6 +7433,32 @@ section h2 {
       .mas-info h2 {
         font-size: 2rem; } }
 
+.grilla-quienes-somos {
+  display: grid;
+  grid-template-columns: repeat(2, 50%); }
+  @media (max-width: 769px) {
+    .grilla-quienes-somos {
+      grid-template-columns: 100%; }
+      .grilla-quienes-somos .grilla3 {
+        order: 4; }
+      .grilla-quienes-somos .grilla4 {
+        order: 3; } }
+
+article {
+  border: none; }
+  article img {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  article.article-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    text-align: justify; }
+
 .columnas-que-es {
   display: flex; }
   .columnas-que-es > * {
@@ -7553,29 +7579,3 @@ footer {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-.grilla-quienes-somos {
-  display: grid;
-  grid-template-columns: repeat(2, 50%); }
-  @media (max-width: 769px) {
-    .grilla-quienes-somos {
-      grid-template-columns: 100%; }
-      .grilla-quienes-somos .grilla3 {
-        order: 4; }
-      .grilla-quienes-somos .grilla4 {
-        order: 3; } }
-
-article {
-  border: none; }
-  article img {
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
-  article.article-texto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 4rem;
-    text-align: justify; }

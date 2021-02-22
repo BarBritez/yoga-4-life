@@ -238,7 +238,41 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 	}
 	}
 }
+// quiénes somos 
+.grilla-quienes-somos{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    @media (max-width: 769px){
+        grid-template-columns:100%;
+        .grilla3{
+            order: 4;
+        }
+        .grilla4{
+            order:3;
+        }
+    }   
+}   
+   
 
+    article{border: none;
+        // position: relative;
+        img{
+            // position:absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &.article-texto{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem;
+            text-align: justify;
+        }
+
+    }
 
 // secciones qué es yoga
 .columnas-que-es{
@@ -381,4 +415,3 @@ animation: fadeIn ease 1.5s;
 0% {opacity:0;}
 100% {opacity:1;}
 }
-@import "grilla-quienes-somos.scss";
