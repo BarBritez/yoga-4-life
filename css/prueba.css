@@ -7472,17 +7472,18 @@ table {
 
 .elementos-clases {
   margin: 1.5rem auto 3rem auto;
-  text-align: center; }
+  display: flex;
+  justify-content: center; }
   .elementos-clases ul {
-    margin: 1rem; }
+    padding-left: 0; }
     .elementos-clases ul li {
       list-style: none; }
 
 .donde-estamos {
-  margin: 2rem 0; }
+  margin: 3rem 0; }
   .donde-estamos h2 {
     text-align: center;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 2rem; }
 
 footer {
   background-color: #fff1e9;

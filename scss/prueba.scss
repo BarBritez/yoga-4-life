@@ -290,21 +290,22 @@ box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
  }
  .elementos-clases{
 	 margin: 1.5rem auto 3rem auto;
-	 text-align: center;
+	 display: flex;
+		 justify-content: center;
 	 ul{
-		 margin: 1rem;
 		 li{
 			 list-style: none;
-		 }	 
-	 }
+		 }	
+		padding-left: 0; 
 
+	 }
  }
 //  contacto
 .donde-estamos{
-	margin: 2rem 0;
+	margin: 3rem 0;
 	h2{
 		text-align: center;
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
 	}
 }	
 footer{
