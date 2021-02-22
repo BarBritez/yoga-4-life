@@ -11,6 +11,7 @@ $primary:#ff782b;
 $secondary: #fff1e9;
 $navbar-light-color: $primary;
 $input-bg: transparent;
+$table-border-color: $primary;
 
 @import "bootstrap-css/bootstrap.scss";
 
@@ -288,23 +289,24 @@ box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
 	margin-bottom: 3rem;
  }
  .elementos-clases{
-	 margin: 3rem 0;
+	 margin: 1.5rem auto 3rem auto;
+	 text-align: center;
 	 ul{
+		 margin: 1rem;
 		 li{
 			 list-style: none;
-		 }
+		 }	 
 	 }
+
  }
 //  contacto
 .donde-estamos{
-	display: flex;
-	div{
-		flex-basis: 50%;
-		display: grid;
-		place-items: center;
-	}		
-}
-// footer
+	margin: 2rem 0;
+	h2{
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+}	
 footer{
 	background-color: $secondary;
 	display:block;
