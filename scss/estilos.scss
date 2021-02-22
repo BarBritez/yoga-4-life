@@ -55,7 +55,6 @@ nav{
 		}
 	}
 }
-
 /*enlaces*/
 a{
 	color: $primary;
@@ -98,8 +97,6 @@ $backgrounds: clases, contacto, inicio, quienes-somos, que-es-yoga;
 	flex-direction: column;
 	justify-content: center;
 }
-
-
 .texto-alineado{
 	text-align: center;
 }
@@ -108,9 +105,7 @@ section{
 		color: $primary;
 	}
 }
-
 /*grilla index*/
-
 .grilla-partes-de-clase{
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -131,15 +126,11 @@ section{
 	}
  	@media (max-width: 769px){
  	display: block;
- 	& > *{
- 	height: 350px;	
- 	}
+		& > *{
+		height: 350px;	
+		}
  	}
  }
-
-
-
-
 .frase{ 
 grid-column: span 3;
 background-color: $primary; 
@@ -154,7 +145,6 @@ text-align: center;
 	border-radius: 3px;
 	}
 }
-
 .image{
 	grid-column: span 2;
 	position: relative;
@@ -179,17 +169,12 @@ text-align: center;
 	z-index: 2;
 	}
 }
-
-
 .frase.frase-imagen{
 	padding: 0;
 	img{
 	width: 100%;
 	}
 }
-
-
-
 .boton-empecemos{
 	color: $secondary;
 	font-weight: 600;
@@ -197,20 +182,16 @@ text-align: center;
   	padding: 8px 20px;
   	border-radius: 5px;
   	width: 140px;
-	transition: .3s ease-in-out;
-	  
+	transition: .3s ease-in-out;	  
   	&:hover{
 	background-color: #fff;
 	color: $primary;
 	text-decoration: none;
 	-webkit-box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
--moz-box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
-box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
+	-moz-box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
+	box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 	}
 }	
-
-
-
 .boton-mas-info{
 	color: $primary;
 	font-weight: 600;
@@ -220,7 +201,6 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
   	width: 150px;
   	transition: .3s ease-in-out;
 }
-
 .mas-info{
 	padding: 3rem;
 	text-align: center;
@@ -231,11 +211,11 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 	color: $primary;
 	margin-bottom: 30px;
 	font-size: 2.5rem;
-	@media(max-width: 500px){
-		&{
-			font-size:2rem;
+		@media(max-width: 500px){
+			&{
+				font-size:2rem;
+			}
 		}
-	}
 	}
 }
 // quiénes somos 
@@ -252,28 +232,25 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
         }
     }   
 }   
-   
-
-    article{border: none;
-        // position: relative;
-        img{
-            // position:absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+article{border: none;
+     // position: relative;
+     img{
+        // position:absolute;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
         }
-        &.article-texto{
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 4rem;
-            text-align: justify;
-        }
+    &.article-texto{
+         display:flex;
+        flex-direction: column;
+        justify-content: center;
+         padding: 4rem;
+         text-align: justify;
+     }
 
-    }
-
+}
 // secciones qué es yoga
 .columnas-que-es{
 	display: flex;
@@ -302,7 +279,6 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 		margin-bottom: 3rem;
 	}
 }
-
  /*tabla*/
  table{	
 	thead{
@@ -313,10 +289,9 @@ box-shadow: 0px 6px 34px 0px rgba(0,0,0,0.17);
 	margin-left: auto;
 	margin-right:auto;
 	-webkit-box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
--moz-box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
-box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
- }
-
+	-moz-box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
+	box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
+ }		
 // clases
  .horarios{
 	margin-top: 3rem;
@@ -325,13 +300,12 @@ box-shadow: 0px 10px 21px 1px rgba(255,120,43,0.13);
  .elementos-clases{
 	 margin: 1.5rem auto 3rem auto;
 	 display: flex;
-		 justify-content: center;
+	 justify-content: center;
 	 ul{
 		 li{
 			 list-style: none;
 		 }	
 		padding-left: 0; 
-
 	 }
  }
 //  contacto
@@ -347,19 +321,18 @@ footer{
 	display:block;
 	padding-top: 30px;
 }
-
 .footer-wrapper{
 	& > * {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	h4{
-		font-size: 0.9rem;
-	}
-	h3{
-		color: $primary;
-		font-size: 1.3rem;
-	}
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		h4{
+			font-size: 0.9rem;
+		}
+		h3{
+			color: $primary;
+			font-size: 1.3rem;
+		}
 	}
 	.redes-copy-footer{
 		border-top: solid 1px $primary;
